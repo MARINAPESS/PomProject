@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="3" ignored="0" total="10" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="154790" started-at="2022-01-30T09:28:36Z" finished-at="2022-01-30T09:31:11Z">
+    <groups>
+    </groups>
+    <test name="Testng" duration-ms="154790" started-at="2022-01-30T09:28:36Z" finished-at="2022-01-30T09:31:11Z">
+      <class name="tests.LoginTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.LoginTest@6af93788]" name="setup" is-config="true" duration-ms="4013" started-at="2022-01-30T09:30:49Z" finished-at="2022-01-30T09:30:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="loginFailed(java.lang.String, java.lang.String)[pri:1, instance:tests.LoginTest@6af93788]" name="loginFailed" duration-ms="1702" started-at="2022-01-30T09:30:53Z" description="Test incorect login information" data-provider="getDate" finished-at="2022-01-30T09:30:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Marina.p]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFailed -->
+        <test-method status="PASS" signature="loginFailed(java.lang.String, java.lang.String)[pri:1, instance:tests.LoginTest@6af93788]" name="loginFailed" duration-ms="2275" started-at="2022-01-30T09:30:55Z" description="Test incorect login information" data-provider="getDate" finished-at="2022-01-30T09:30:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Marina.n]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFailed -->
+        <test-method status="PASS" signature="loginFailed(java.lang.String, java.lang.String)[pri:1, instance:tests.LoginTest@6af93788]" name="loginFailed" duration-ms="1975" started-at="2022-01-30T09:30:57Z" description="Test incorect login information" data-provider="getDate" finished-at="2022-01-30T09:30:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Shavit.j]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFailed -->
+        <test-method status="FAIL" signature="loginSucceed()[pri:2, instance:tests.LoginTest@6af93788]" name="loginSucceed" duration-ms="11270" started-at="2022-01-30T09:30:59Z" description="Test correct login information" finished-at="2022-01-30T09:31:10Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#body_Username"}
+  (Session info: chrome=97.0.4692.99)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-6DELK5O', ip: '192.168.14.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [76ae33f784e9b8aafeb2f478b660f806, findElement {using=css selector, value=#body_Username}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\Michael\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50827}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50827/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 76ae33f784e9b8aafeb2f478b660f806]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#body_Username"}
+  (Session info: chrome=97.0.4692.99)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-6DELK5O', ip: '192.168.14.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [76ae33f784e9b8aafeb2f478b660f806, findElement {using=css selector, value=#body_Username}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\Michael\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50827}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50827/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 76ae33f784e9b8aafeb2f478b660f806
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy13.clear(Unknown Source)
+at PageObject.BasePage.fillText(BasePage.java:23)
+at PageObject.LoginPage.login(LoginPage.java:35)
+at tests.LoginTest.loginSucceed(LoginTest.java:28)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSucceed -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.LoginTest@6af93788]" name="tearDown" is-config="true" duration-ms="764" started-at="2022-01-30T09:31:10Z" finished-at="2022-01-30T09:31:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.SearchAllTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.SearchAllTest@1b1473ab]" name="setup" is-config="true" duration-ms="5026" started-at="2022-01-30T09:29:49Z" finished-at="2022-01-30T09:29:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="isDisplayed()[pri:0, instance:tests.SearchAllTest@1b1473ab]" name="isDisplayed" duration-ms="30613" started-at="2022-01-30T09:29:54Z" description="Checks if message is desplayed" finished-at="2022-01-30T09:30:25Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#MessageLabel"}
+  (Session info: chrome=97.0.4692.99)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-6DELK5O', ip: '192.168.14.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [826e4500db9a42a5447969f75f2997c7, findElement {using=css selector, value=#MessageLabel}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\Michael\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50717}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50717/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 826e4500db9a42a5447969f75f2997c7]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#MessageLabel"}
+  (Session info: chrome=97.0.4692.99)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-6DELK5O', ip: '192.168.14.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [826e4500db9a42a5447969f75f2997c7, findElement {using=css selector, value=#MessageLabel}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\Michael\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50717}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50717/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 826e4500db9a42a5447969f75f2997c7
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+at PageObject.SearchAllPage.isMsgDisplayed(SearchAllPage.java:37)
+at tests.SearchAllTest.isDisplayed(SearchAllTest.java:24)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isDisplayed -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.SearchAllTest@1b1473ab]" name="tearDown" is-config="true" duration-ms="764" started-at="2022-01-30T09:30:25Z" finished-at="2022-01-30T09:30:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.SearchAllTest -->
+      <class name="tests.ViewMyFormsTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.ViewMyFormsTest@2f7c2f4f]" name="setup" is-config="true" duration-ms="4460" started-at="2022-01-30T09:30:26Z" finished-at="2022-01-30T09:30:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="dropDownFail()[pri:0, instance:tests.ViewMyFormsTest@2f7c2f4f]" name="dropDownFail" duration-ms="9303" started-at="2022-01-30T09:30:30Z" finished-at="2022-01-30T09:30:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dropDownFail -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.ViewMyFormsTest@2f7c2f4f]" name="tearDown" is-config="true" duration-ms="768" started-at="2022-01-30T09:30:40Z" finished-at="2022-01-30T09:30:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.ViewMyFormsTest -->
+      <class name="tests.AccountTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.AccountTest@3aefe5e5]" name="setup" is-config="true" duration-ms="27297" started-at="2022-01-30T09:28:36Z" finished-at="2022-01-30T09:29:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="isExist()[pri:0, instance:tests.AccountTest@3aefe5e5]" name="isExist" duration-ms="18568" started-at="2022-01-30T09:29:04Z" description="Checks if the update state exist" finished-at="2022-01-30T09:29:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isExist -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.AccountTest@3aefe5e5]" name="tearDown" is-config="true" duration-ms="891" started-at="2022-01-30T09:29:22Z" finished-at="2022-01-30T09:29:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.AccountTest -->
+      <class name="tests.SpecificFormPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.SpecificFormPageTest@149e0f5d]" name="setup" is-config="true" duration-ms="5023" started-at="2022-01-30T09:29:23Z" finished-at="2022-01-30T09:29:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="currentPage()[pri:0, instance:tests.SpecificFormPageTest@149e0f5d]" name="currentPage" duration-ms="20368" started-at="2022-01-30T09:29:28Z" description="This test checks page&#039;s title" finished-at="2022-01-30T09:29:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- currentPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.SpecificFormPageTest@149e0f5d]" name="tearDown" is-config="true" duration-ms="832" started-at="2022-01-30T09:29:49Z" finished-at="2022-01-30T09:29:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.SpecificFormPageTest -->
+      <class name="tests.ForgotPasswordTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.ForgotPasswordTest@ef9296d]" name="setup" is-config="true" duration-ms="4406" started-at="2022-01-30T09:30:40Z" finished-at="2022-01-30T09:30:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="isRestoreAvailable()[pri:0, instance:tests.ForgotPasswordTest@ef9296d]" name="isRestoreAvailable" duration-ms="2543" started-at="2022-01-30T09:30:45Z" description="Checks if it&#039;s posible to restore forgotten details - message shall be appeared" finished-at="2022-01-30T09:30:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isRestoreAvailable -->
+        <test-method status="FAIL" signature="msgText()[pri:0, instance:tests.ForgotPasswordTest@ef9296d]" name="msgText" duration-ms="1069" started-at="2022-01-30T09:30:47Z" description="Checks if it&#039;s posible to restore forgotten details - message shall be appeared" finished-at="2022-01-30T09:30:48Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [instructions on how to reset your password have been sent to the email address registered with the username provided.] but found [Instructions on how to reset your password have been sent to the email address registered with the username provided.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [instructions on how to reset your password have been sent to the email address registered with the username provided.] but found [Instructions on how to reset your password have been sent to the email address registered with the username provided.]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at tests.ForgotPasswordTest.msgText(ForgotPasswordTest.java:30)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- msgText -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.ForgotPasswordTest@ef9296d]" name="tearDown" is-config="true" duration-ms="713" started-at="2022-01-30T09:30:48Z" finished-at="2022-01-30T09:30:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.ForgotPasswordTest -->
+    </test> <!-- Testng -->
+  </suite> <!-- Suite -->
+</testng-results>
