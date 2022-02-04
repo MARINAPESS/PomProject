@@ -29,6 +29,7 @@ public class LoginTest extends BaseTest{
 		String expected = "Hello, Shavit";
 		String actual = loginPage.loginValidation();
 		Assert.assertEquals(actual, expected);
+		System.out.println("marina test");
 	}
 	
 	@DataProvider
